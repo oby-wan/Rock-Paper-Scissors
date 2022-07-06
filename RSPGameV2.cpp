@@ -47,26 +47,26 @@ int main() {
         }
 
         switch (playerChoice) {
-            case 0: // The case for when the PC picks ROCK
+            case 0: // The case for when the player picks ROCK
                 if (cpuChoice == 0) {
                     cout << "You've chosen ROCK, and the PC played ROCK.. " << endl << "YOU TIE! " << endl;
                     break;
                 }
                 if (cpuChoice == 1) {
-                    cout << "You've chosen SCISSORS, and the PC played ROCK.. " << endl << "YOU LOSE! " << endl;
-                    cpuWins++;
+                    cout << "You've chosen ROCK, and the PC played SCISSORS.. " << endl << "YOU WIN! " << endl;
+                    playerWins++;
                     break;
                 }
                 if (cpuChoice == 2) {
-                    cout << "You've chosen PAPER, and the PC played ROCK.. " << endl << "YOU WIN! " << endl;
-                    playerWins++;
+                    cout << "You've chosen ROCK, and the PC played PAPER.. " << endl << "YOU LOSE! " << endl;
+                    cpuWins++;
                     break;
                 }
 
-            case 1: // the case for when the PC picks SCISSORS
+            case 1: // the case for when the player picks SCISSORS
                 if (cpuChoice == 0) {
-                    cout << "You've chosen ROCK, and the PC played SCISSORS.. " << endl << "YOU WIN! " << endl;
-                    playerWins++;
+                    cout << "You've chosen SCISSORS, and the PC played ROCK.. " << endl << "YOU LOSE! " << endl;
+                    cpuWins++;
                     break;
                 }
                 if (cpuChoice == 1) {
@@ -74,20 +74,20 @@ int main() {
                     break;
                 }
                 if (cpuChoice == 2) {
-                    cout << "You've chosen PAPER, and the PC played SCISSORS .. " << endl << "YOU LOSE! " << endl;
-                    cpuWins++;
+                    cout << "You've chosen SCISSORS, and the PC played PAPER.. " << endl << "YOU WIN! " << endl;
+                    playerWins++;
                     break;
                 }
 
-            case 2: // the case for when the PC picks PAPER
+            case 2: // the case for when the player picks PAPER
                 if (cpuChoice == 0) {
-                    cout << "You've chosen ROCK, and the PC played PAPER.. " << endl << "YOU LOSE! " << endl;
-                    cpuWins++;
+                    cout << "You've chosen PAPER, and the PC played ROCK.. " << endl << "YOU WIN! " << endl;
+                    playerWins++;
                     break;
                 }
                 if (cpuChoice == 1) {
-                    cout << "You've chosen SCISSORS, and the PC played PAPER. " << endl << "YOU WIN! " << endl;
-                    playerWins++;
+                    cout << "You've chosen PAPER, and the PC played SCISSORS. " << endl << "YOU LOSE! " << endl;
+                    cpuWins++;
                     break;
                 }
                 if (cpuChoice == 2) {
